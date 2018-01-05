@@ -1,5 +1,5 @@
 defmodule DriveWealth.Account do
-  use Tesla
+  use Tesla, docs: false
   @moduledoc """
   Documentation for DriveWealth Account, see http://developer.drivewealth.com "ACCOUNTS" section for more documentation.
   """

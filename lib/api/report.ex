@@ -1,5 +1,5 @@
 defmodule DriveWealth.Report do
-  use Tesla
+  use Tesla, docs: false
   @moduledoc """
   Documentation for DriveWealth Reports, see http://developer.drivewealth.com "REPORTS" section for more documentation.
   """

@@ -1,5 +1,5 @@
 defmodule DriveWealth.Session do
-  use Tesla
+  use Tesla, docs: false
   @moduledoc """
   Documentation for DriveWealth Session, see http://developer.drivewealth.com "SESSIONS" section for more documentation.
   """
