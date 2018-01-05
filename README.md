@@ -24,7 +24,7 @@ The package can be installed by adding `drivewealth_api` to your list of depende
 ```elixir
 def deps do
   [
-    {:drivewealth_api, "~> 0.1.0"}
+    {:drivewealth_api, "~> 0.2.0"}
   ]
 end
 ```
