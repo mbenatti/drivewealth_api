@@ -16,7 +16,7 @@ defmodule DriveWealth.Account do
 
     - sessionKey: String that represents a session.
     - userID: String that represents the name username.
-    - accountID: String that represents the name password
+    - accountID: String that represents the account id
 
   ## Examples
 
