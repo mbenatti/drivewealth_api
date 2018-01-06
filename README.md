@@ -1,6 +1,6 @@
 # DriveWealth
 
-DriveWealth API in Elixir (http://developer.drivewealth.com/docs)
+DriveWealth API Client for Elixir (http://developer.drivewealth.com/docs)
 
 What is implemented?
 
