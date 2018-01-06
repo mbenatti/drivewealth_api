@@ -42,7 +42,9 @@ defmodule DriveWealth.Account do
     |> validate_request
   end
 
-  @doc false
+  @doc """
+  Get account_performance or return an :error
+  """
   def account_performance!(session_key, user_id, account_id, ops \\ %{"period" => "1d"} ) do
     session_key
     |> account_performance(user_id, account_id)

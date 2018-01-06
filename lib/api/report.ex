@@ -58,7 +58,9 @@ defmodule DriveWealth.Report do
     |> validate_request
   end
 
-  @doc false
+  @doc """
+  Get the financial_transaction or return an :error
+  """
   def financial_transaction!(session_key, account_number, date_start, date_end, opts \\ %{
     "ReportFormat" => "JSON"
   }) do

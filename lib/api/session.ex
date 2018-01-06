@@ -92,7 +92,9 @@ defmodule DriveWealth.Session do
     {:error, "Session is empty"}
   end
 
-  @doc false
+  @doc """
+  Get session or report an error
+  """
   @spec get_session!(String.t()) :: Map.t() | :error
   def get_session!(session) do
     session
