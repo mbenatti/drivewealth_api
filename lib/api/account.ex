@@ -36,14 +36,14 @@ defmodule DriveWealth.Account do
 
   """
   @spec account_performance(String.t(), String.t(), String.t()) :: {:ok, Map.t()} | {:error, String.t()} | {:error, Map.t()}
-  def account_performance(session_key, user_id, account_id) do
-    "/users/" <> user_id <> "/accountPerformance/" <> account_id <> "/"
-    |> get(headers: %{"x-mysolomeo-session-key" => session_key})
+  def account_performance(session_key, user_id, account_id, opts \\ %{"period" => "1d"}) do
+    "/users/" <> user_id <> "/accountPerformance/" <> account_id <> "/history"
+    |> get(headers: %{"x-mysolomeo-session-key" => session_key}, query: opts)
     |> validate_request
   end
 
   @doc false
-  def account_performance!(session_key, user_id, account_id) do
+  def account_performance!(session_key, user_id, account_id, ops \\ %{"period" => "1d"} ) do
     session_key
     |> account_performance(user_id, account_id)
     |> validate_request!
