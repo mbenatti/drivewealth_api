@@ -10,7 +10,7 @@ What is implemented?
 ### REPORTS
 - [X] Financial Transaction
 
-SESSIONS
+### SESSIONS
 - [X] Get Session
 - [X] Create Session
 - [X] Cancel Session
