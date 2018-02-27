@@ -31,7 +31,7 @@ defmodule DriveWealth.Account do
             "withdrawals" => -1035}], "startDate" => "2018-01-04"}}
 
 
-      iex> DriveWealth.Account.account_performance("session_id_invalid", "account_number", "date_start", "date_end")
+      iex> DriveWealth.Account.account_performance("session_id_invalid", "user_id", "account_number")
       {:error, "Invalid Session."}
 
   """
