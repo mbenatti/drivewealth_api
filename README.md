@@ -2,7 +2,7 @@
 
 DriveWealth API Client for Elixir (http://developer.drivewealth.com/docs)
 
-What is implemented?
+What are implemented?
 
 ### ACCOUNTS
 - [X] Account Performance
